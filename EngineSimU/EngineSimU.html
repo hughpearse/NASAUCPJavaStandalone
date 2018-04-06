@@ -1,0 +1,473 @@
+<HTML>
+<!--This file created 10:17 AM  09/18/2000 by Claris Home Page version 3.0-->
+<HEAD>
+   <TITLE>EngineSimU 1.8a beta - University Version</TITLE>
+   <META NAME=GENERATOR CONTENT="Claris Home Page 3.0">
+   <X-CLARIS-WINDOW TOP=27 BOTTOM=427 LEFT=24 RIGHT=612>
+   <X-CLARIS-TAGVIEW MODE=minimal>
+</HEAD>
+<BODY>
+ <FONT COLOR="#FF0000">This is the beta 1.8a version of the
+NASA Glenn <B>EngineSimU</B>
+program, and you are invited to participate in the beta testing. If 
+you find any errors in the program or would like to suggest
+improvements, please send an e-mail to Thomas.J.Benson@nasa.gov.
+</FONT>
+</P>
+
+<p>
+   <applet code="Turbo.class" width=710 height=450 align=bottom>
+  </applet>
+</p>
+<p>
+    <font size="2" face="Arial, Helvetica, sans-serif">With this software you 
+    can investigate how a turbine (or jet) engine produces 
+    thrust by changing the values of different engine parameters. 
+    If you are an experienced EngineSimU user, you
+    can use a slightly different <a href="Turbo.html">version </a>
+    of the program which does not include these instructions. 
+    </font>
+</p>
+  <p align="left">
+<i>
+Recently (2013), there have been several security patches added to the Java Runtime Environment (JRE).
+As a result of the security patches, EngineSimU does not always perform as it did in the past. Since you have 
+downloaded this version of the program, you may experience some of these problems. One patch
+does not allow the display of .gif images from a local directory. So you will not be able to see the engine
+animations in Tunnel Test Mode or any of the component pictures on the output panel at the lower right which were available in earlier versions.
+We have maintained all the functionality of previous versions, but just do not display any photos.
+
+</i>
+</p>
+<p> <font size="2" face="Arial, Helvetica, sans-serif">
+           This program is designed to be interactive, so you have to work with the program.
+           There are several different types of widgets that you use to work with the program.
+<ol>
+     <li>
+           There are a variety of choices which you must make regarding the analysis and the display
+           of results by using a <b>choice box</b>.
+           A choice box has a descriptive word displayed and an arrow at the right of the
+           box. To make a choice, click on either the arrow or the current choice word, hold down,
+           and drag to make your selection. The new selection is indicated by a change in the word.
+           <i> A recent security patch has changed the way that choice boxes operate. 
+              This can result in a condition where you can't change from Imperial to Metric units. 
+              To overcome this problem, we have included an <b>Override</b> option on the choice boxes
+              on the control panel. If you get stuck, click on <b>Override</b> then click on your choice; 
+              it will then work correctly.
+            </i> 
+    </li><li>
+           The current values of the design variables are presented to you in <b>text boxes</b>. 
+           By convention, a white box with
+           black numbers is an input box and you can change the value of the number. A black box with
+           yellow or red numbers is an output box and the value has been computed by the program.
+           To change the value in an input box, select the box by moving the cursor into the box
+           and clicking the mouse, then backspace over the old number, enter a new number,
+           then hit the <b>Enter</b> key on your keyboard. <b>You must hit Enter
+           to send the new value to the program.</b>
+    </li><li>
+           For most input variables you can also use a <b>slider</b> located next to the input box.
+           Click on the slider bar, hold down and drag the slider bar to change values, or
+           you can click on the arrows at either end of the slider.
+           <i>If you experience difficulties when using the sliders to change variables,
+           simply click away from the slider and then back to it.</font>
+           <font color="#FF0000" face="Arial, Helvetica, sans-serif" size="2">
+           </font><font color="#000000" face="Arial, Helvetica, sans-serif" size="2">If
+           the arrows on the end of the sliders disappear, click in the areas
+           where the left and right arrow images should appear, and they
+           should reappear.</i>
+     </li><li>
+           Some graphics decisions are selected by pushing <b>buttons</b>. 
+           To push a button, move the cursor over the button and click the mouse.
+      </li>
+  </ol>
+</font>
+</p>
+
+  <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">SCREEN</font></p>
+  <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">The program 
+    screen is divided into four main parts:</font></p>
+    <ol>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">On the top left side 
+        of the screen is a graphic of the engine you are designing or testing. 
+        In the Design Mode, the drawing is a schematic, while in Tunnel Test Mode 
+        the drawing is an animation.</font></li>
+       <li><font size="2" face="Arial, Helvetica, sans-serif">On the
+                  upper right side of the screen are choice buttons which
+                  control the analysis. You can select the type of analysis,
+                  the type of output to be displayed,
+                  and the units to be used in the calculations.
+                  You will always see the overall
+                  engine performance displayed as thrust, fuel flow, airflow,
+                  and computed engine weight.
+                  </font></li>
+                <li><font size="2" face="Arial, Helvetica, sans-serif">On the
+                  lower right side of the screen are the results of engine performance
+                  calculations. The output can be presented as numerical values
+                  of certain parameters, graphs of engine performance, or as photos
+                  of the engine parts with descriptions of their purpose. You
+                  select the type of output displayed by using the red choice
+                  button labeled "Output:" on the upper right panel. </font></li>
+                <li><font size="2" face="Arial, Helvetica, sans-serif">On the
+                  lower left side of the screen various input panels are displayed.
+                  You can select the input panel by clicking on the name or the
+                  component in the graphic at the upper left.
+                  Limits are established for the variables in the program. If you
+                  click on "Limits" on the schematic, you will invoke a special
+                  input panel that allows you to reset those limits.
+                  <b>You must push the blue "Submit" button to send your changes
+                   to the program</b>.
+                  </font></li>
+    </ol>
+  <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">ENGINE DESIGN PROCESS: 
+    </font></p>
+  <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">You can 
+    choose from four different types of engines: a simple 
+    turbojet, a jet with afterburner, 
+    a turbofan engine, or a ramjet.
+    Selections are made on the graphics window by clicking on the engine name. The chosen
+    engine is shown in yellow. Depending on the engine type, different input panels appear 
+    at the lower left.
+</font>
+</p>
+             <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">
+              The design process begins by selecting the design Flight Conditions.
+              The Flight input panel lets you change the Mach number, airspeed, altitude, pressure,
+              temperature, and throttle and afterburner settings. There are several different
+              combinations of these variables available for input using the choice button
+              on the input panel. The pressure and temperature are computed as functions
+              of the altitude by using a Standard Day atmospheric model.
+              </font></p>
+            <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">Design
+              variables for each engine component can also be varied.
+              The variables include the Inlet (pressure recovery), Fan (pressure
+              ratio, efficiency, and bypass ratio), Compressor (CPR, compressor
+              efficiency), Burner (fuel,maximum temperature, efficiency, pressure ratio),
+              Turbine (turbine efficiency) and Nozzle (maximum temperature, efficiency,
+              A8/A2). As you choose a different component the part of the engine
+              being affected is highlighted in the graphic by changing from its
+              default color to yellow. And a new input panel will appear at the lower left.
+              If you change the Output Display to Photos
+              you can view an actual photograph and description of each engine
+              part.
+              </font></p>
+            <p align="left"><font size="2" face="Arial, Helvetica, sans-serif"> Engine
+              Size can be specified by either the frontal area or the diameter.
+              As the engine size changes, the grid background changes in
+              proportion to the size. The distance between any
+              two grid lines is 1 foot.
+             </font></p>
+   <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">MATERIALS
+      INPUT</font></p>
+<p align="left"><font size="2" face="Arial, Helvetica, sans-serif"> The program
+      will calculate an average weight of the engine that
+      you design. The thrust to weight ratio of the engine
+      is displayed in the numerical output and is a measure of the efficiency of
+      the engine. The weight depends on the number of stages in the compressor and
+      turbine, the diameter (frontal area) of the engine, and the component materials.
+      The program begins with standard materials for the components, but you can
+      change the materials and see the effects on weight of the engine. Just push
+      the blue Materials choice button on any component input panel. You
+      can also select to define your own material by choosing My Material from the
+      menu. Just type in your own values for material density and temperature limit.
+    </p><p>
+      The program will check the temperature throughout the engine design against
+      the material limits. If you exceed a limit, a flashing warning will occur
+      in the schematic. You can see the temperature limits by choosing <b>Graphs</b>
+      in the Output display of the control panel. Then select <b>Temperature</b>
+      as the type of graphics display. (For the afterburner and the ramjet, the graphical
+      temperature limits are based on the flow temperature, not on the material
+      temperature, and are slightly higher than the material limits. Cooling airflow
+      is often used along the walls of these components to keep the material temperature
+      within limits.)
+ </font></p>
+<p align="left"><font size="2" face="Arial, Helvetica, sans-serif">CONTROL PANEL CHOICES:
+      Mode, Units, Output Display
+</font>
+</p>
+             <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">The
+              program works in two modes: Design or Tunnel Test Mode. In the Design
+              Mode, you can change design variables including the flight conditions,
+              the engine size, the inlet performance,
+              the turbo machinery compressor and turbine
+              performance, the combustors or burner
+              performance, or the nozzle performance.
+              For a turbofan engine design you can
+              also vary the fan performance and the bypass ratio.
+              In Design Mode, any change in an input parameter produces a new engine
+              design. You have to be very careful when drawing conclusions about
+              the effects of input variables on performance because you are not comparing the effects
+              on the same engine.
+             </font></p>
+            <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">
+              In Tunnel Test Mode
+              you can vary only the flight conditions and you can not change
+              any of the component design parameters except the throttle setting.
+              The values of some of the parameters like inlet recovery and nozzle area
+              may change according to choices that you made during design.
+              In Tunnel Test Mode you are evaluating the off-design performance
+              of the engine model which you specified in Design Mode.
+              In Tunnel Test mode, you can load models
+              of existing turbine engines for comparison with your design. You
+              can always reload your design to continue testing. In Design Mode,
+              you can use the existing engine models as good starting points for
+              your design.
+</font></p>
+
+  <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">The calculations 
+    can be performed in either Metric or Imperial (English) units.  
+    You can always return to the default conditions 
+      by pushing the red <b>Reset</b> button on the control panel.
+  <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">GRAPHICAL 
+    OUTPUT</font></p>
+  <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">The red <b>Output</b>
+      display menu on the upper right control panel allows you to change the contents of the
+      output window on the lower right side of the screen. 
+    You can choose to display output boxes with 
+    numerical values of the engine performance, as described below. Or you can 
+    display photographs and descriptions of each engine part. You can display 
+    the variation of the value of pressure and temperature at various stations 
+    through the engine. Or you can also display a T-s Plot or a P-v Plot, which 
+    are used by engineers to determine engine performance.</font></p>
+  <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">To generate 
+    your own performance plots, select "Generate" from the graphics window. The input 
+    panel will now display some additional buttons and sliders to generate a plot. 
+    Choose the variables to be plotted using the pulldown menus and then push 
+    the "Begin" data button. Set the value of the independent variable by using 
+    the slider or the type-in box. Push the blue "Take Data" button and a data 
+    point will appear on the graph. Set a new value for the variable and take 
+    another data point (up to 25 points in any order). When you are finished, 
+    push the "End" button and a line will be drawn through your data points. To 
+    start a new graph, push "Begin" and your old graph will vanish.
+    When you are finished, push the red "Exit" button and you will return
+   to free stream conditions.</font></p>
+   <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">NUMERICAL
+      OUTPUT</font></p>
+             <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">Numerical
+              Output from the program is displayed on two panels.
+              The total engine performance is always displayed on the control panel
+              panel at the upper right and includes the engine net thrust,
+              the fuel flow rate,
+              the engine air flow rate,
+              the engine weight, the thrust to weight ratio, and the
+              specific fuel consumption.
+              </p>
+              <p>
+              There are two additional performance panels that are displayed atthe lower right.
+              The Engine Performance output panel shows the fuel-to-air ratio,
+              the engine pressure
+              ratio (EPR)and engine temperature ratio
+              (ETR), gross thrust, and ram drag. Additional component performance
+              parameters, such as the nozzle pressure ratio (NPR), 
+              compressor pressure ratio (CPR), engine thermal efficiency,
+              nozzle exit velocity (V exit), free stream dynamic
+              pressure (q0), and specific impulse (ISP) are displayed.
+              Nozzle exit pressure (Pexit) and fan nozzle exit pressure (P fan exit)
+              and the compressor face Mach number (M2) are also displayed.
+              The Component Performance output panel shows the variation of
+              total pressure and temperature at various stages through the engine.
+              </font></p>
+  <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">NEW FEATURES</font></p>
+ <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">The NASA Glenn Educational Programs
+      Office will continue to improve and update EngineSim  based
+      on user input. Changes from previous versions of the program include:</font></p>
+       <ol>
+              <li><font size="2" face="Arial, Helvetica, sans-serif">On 19 Aug
+                14 version 1.8a was released. This version has been updated
+                to overcome some problems caused by recent Java security patches.
+                There are no longer any photos of engine components and no 
+                animation displayed during Tunnel Test mode. The basic analysis has
+                remained the same from Version 1.7c, only the photos have been removed.
+                </font> </li>
+
+              <li><font size="2" face="Arial, Helvetica, sans-serif">On 5 Dec
+                13 version 1.7c was released. This version has been updated
+                to overcome some problems in the use of choice boxes caused
+                by recent Java security patches.
+                </font> </li>
+              <li><font size="2" face="Arial, Helvetica, sans-serif">On 18 Oct
+                12 version 1.7b was released. This version has been updated
+                to include the compressor pressure ratio on the output panel.
+                This will help users to see the difference between Design Mode and 
+               Tunnel Test Mode.
+                </font> </li>
+              <li><font size="2" face="Arial, Helvetica, sans-serif">On 26 Oct
+
+                05 version 1.7a was released. This version has been re-sized
+
+                to fit the NASA portal. Some additional output variables have
+
+                been added and a correction to the gross thrust calculation was
+
+                made. The logic for moving the engine graphic was also changed.
+
+                </font> </li>
+
+              <li><font size="2" face="Arial, Helvetica, sans-serif">On 20 Feb
+
+                04 version 1.6e was released. This version has a cleaner look
+
+                by moving the units into the output boxes. Engine thermal
+ 
+                efficiency is now output instead of compressor Mach number.
+
+                </font> </li>
+
+              <li><font size="2" face="Arial, Helvetica, sans-serif">On 11 Dec
+
+                03 version 1.6d was released. This version has separate input
+
+                panels for the ramjet burner and nozzle and allows the user
+
+                to specify the ramjet fuel.
+
+                </font> </li>
+
+              <li><font size="2" face="Arial, Helvetica, sans-serif">On 25 Nov
+ 
+               03 version 1.6c was released. This version lets the user move
+
+                the engine graphic. The user can also specify any fuel by giving
+
+                the fuel heating value. A bug related to the nozzle total temperature
+
+                has been fixed.
+
+                </font> </li>
+
+              <li><font size="2" face="Arial, Helvetica, sans-serif">On 17 Oct
+
+                03 version 1.6b was released. This version has a slightly
+
+                modified graphics window for resizing the application.
+
+                Tabs are also added to the printed output of the application.
+
+                </font> </li>
+
+              <li><font size="2" face="Arial, Helvetica, sans-serif">On 15 Sep
+
+                03 version 1.6a was released. This version includes the component
+
+                output panel, additional input and output variables,
+
+                and some new input options for the flight conditions.
+
+                This is the first version which is available as a Java application.
+
+                The application permits the user to save results between sessions
+
+                and is run off-line.
+
+                There are minor changes to the layout of the program
+
+                and bugs in the weight calculations are corrected.
+
+                </font> </li>
+
+              <li><font size="2" face="Arial, Helvetica, sans-serif">On 6 Jun
+
+                03 version 1.5h was released. This version corrects a bug
+ 
+               in the loading of existing engine models. Materials information is
+
+                now included in the upload.
+
+                </font> </li>
+
+              <li><font size="2" face="Arial, Helvetica, sans-serif">On 29 Apr
+
+                03 version 1.5g was released. This version corrects a bug
+
+                in the ramjet temperature calculations.
+
+                </font> </li>
+
+              <li><font size="2" face="Arial, Helvetica, sans-serif">On 18 Mar
+
+                03 version 1.5f was released. This version includes a correction
+
+                to the weight calculation when you change compressor face area.
+
+                </font> </li>
+
+              <li><font size="2" face="Arial, Helvetica, sans-serif">On 17 Sep
+
+                01 a special version for undergraduates was released. This version includes
+
+                the ability to reset most of the limits in the program.
+
+                </font> </li>
+
+              <li><font size="2" face="Arial, Helvetica, sans-serif">On 22 Aug
+
+                01 version 1.5b was released. This version includes more corrections
+
+                to the ramjet analysis and some slight changes to the variable limits.
+
+                A "sleek" version of the program is now available for experienced users.</font> </li>
+
+      <li><font size="2" face="Arial, Helvetica, sans-serif">On 19 Apr 01 version
+ 
+        1.5 was released. This version includes improved graphics and a more consistent 
+        input environment. There are also corrections to the ramjet analysis from
+
+        previous versions.
+        </font> 
+      </li>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">On 13 Oct 00 version 
+        1.4 was released. This version includes material properties for each component 
+        and a calculation of the engine weight. Temperature limits for each component 
+        are also checked. </font> 
+      </li>
+      <li> 
+      <p><font size="2" face="Arial, Helvetica, sans-serif">On 26 
+        Sept 00 version 1.3 was released. This version uses the "card format" 
+        for input and output. Component input panels are invoked from the engine 
+        graphic. Optional photos of the components are included on the output 
+        panel. </font> 
+      </li>
+      <li> 
+      <p><font size="2" face="Arial, Helvetica, sans-serif">On 31 
+        Mar 00 version 1.2 was released. This version includes a ramjet simulation.</font> 
+      </li>
+      <li> 
+      <p><font size="2" face="Arial, Helvetica, sans-serif">On 
+        2 Dec 99 version 1.1 was released. This version includes a variety of 
+        plots and an optional animation displays. This applet enables the student 
+        to interactively observe the effects of engine component performance on 
+        thrust and fuel consumption.</font>
+      </li>
+    </ol>
+  <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">INTRODUCTORY 
+    EXERCISE</font></p>
+  <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">Set the following 
+    conditions in EngineSim:</font></p>
+    <blockquote><font size="2" face="Arial, Helvetica, sans-serif">Design Mode<br>
+      English Units<br>
+      Turbojet<br>
+      Flight Conditions</font></blockquote>
+  <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">The Airspeed 
+    should be 0, the Altitude 0, and the Throttle 100. Record the thrust <br>
+    (F net) ___________and the Fuel Flow __________.<br>
+    Now go ahead and change the altitude to 10,000 ft. and the Airspeed to 350. 
+    Did the thrust increase or decrease? Did the fuel flow increase or decrease? 
+    Thrust ________ Fuel Flow__.<br>
+    What happens when you choose a different engine? Choose a jet with afterburner 
+    and record the thrust ___________ and the fuel flow ____________.<br>
+    Choose a turbofan engine and record the thrust _____________ and the fuel 
+    flow________.<br>
+    What can you conclude about the effect of an increase in altitude and airspeed 
+    on thrust? __________________________________ On fuel flow?__________________________<br>
+    Which engine is most fuel efficient? _______________________________</font></p>
+  <hr align="left">
+  <font size="2" face="Arial, Helvetica, sans-serif">Please 
+    send any comments to:<br>
+    Thomas.J.Benson@nasa.gov 
+    </font>
+  <p align="left"></p>
+  <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">Last Updated 
+    <!--#config timefmt="%a, %b %d %r %Z %Y" --> <!--#echo var="LAST_MODIFIED" --> 
+    by Tom Benson<br>
+    </font></p>
+</BODY>
+</HTML>
