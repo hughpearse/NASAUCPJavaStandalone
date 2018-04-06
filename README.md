@@ -1,4 +1,4 @@
-# FoilSim3JavaStandalone
+# NASAUCPJavaStandalone
 Port of various NASA projects from a Java applets to standalone Java applications.
 
 FoilSim III Student Version 1.5a
