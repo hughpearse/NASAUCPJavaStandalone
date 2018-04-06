@@ -1,6 +1,6 @@
 
-import lump.Foil;
-import lump.MainFrame;
+import FoilSim.Foil;
+import Acme.MainFrame;
 
 public class Driver {
     public static void main(String[] args){
